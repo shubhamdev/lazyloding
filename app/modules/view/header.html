@@ -1,0 +1,48 @@
+    <style>
+        .topnav {
+          overflow: hidden;
+          background-color: darkred;
+        }
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active {
+          background-color: #1010ff;
+          color: white;
+        }
+    </style>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="
+    background-color: cadetblue;
+">
+    <div class="container">
+        <div class="navbar-header" style="margin-top: 12px">
+            <a ng-click="routeChange('home')" style="color: #fff;">eCommerce World</a> | 
+            <a ng-click="routeChange('about')" style="color: #fff;">About us</a> | 
+            <a ng-click="routeChange('services')" style="color: #fff;">services</a> | <a ng-click="routeChange('contact')" style="color: #fff;">contact</a> 
+        </div>
+
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="query" name="query" placeholder="Search">
+            </div>
+            <button ng-click="search(query)" class="btn btn-default">Submit</button>
+            <a ui-sref="cart">
+                <button type="button" ng-click="routeChange('cart')" class="btn btn-success"> 
+                  <span style="color: black;">{{count}}</span>
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cart
+                </button>
+            </a>
+        </form>
+    </div>
+</nav>

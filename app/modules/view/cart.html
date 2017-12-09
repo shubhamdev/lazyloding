@@ -1,0 +1,35 @@
+    <div class="row" style="margin-left: 10px;">
+    	<h3>Card Item</h3>
+    	<div class="col-md-10" ng-if="data.length > 0">
+    		<table class="table table-striped">
+	                <thead>
+	                  <tr>
+	                    <th class="col-xs-4">Id</th> 
+	                    <th class="col-xs-4">Name</th>
+	                    <th class="col-xs-4">Price</th>
+	                    <th class="col-xs-4">Action</th>
+	                  </tr>
+	                </thead>
+	                <tbody>
+	                  <tr ng-repeat="i in data">
+	                    <td class="col-xs-4">{{i.id}}</td> 
+	                    <td class="col-xs-4">{{i.name}}</td>
+	                    <td class="col-xs-4">{{i.price}}</td>
+	                    <td class="col-xs-4">
+	                    	<button class="btn btn-danger" ng-click="removeItem(i)"
+	                    	>Remove</button>
+	                    </td>
+	                  </tr>
+	                </tbody>
+                </table>
+    	</div>
+    	<div class="col-md-10" ng-if="data.length === 0">
+    		<p>Empty cart</p>
+    	</div>
+    	<div class="col-md-2">
+    		<p>Price: {{totalPrice}}</p>
+    		<button class="btn btn-primary" ng-click="placeOrder()">Checkout</button>
+    	</div>
+	    
+	              
+    </div>

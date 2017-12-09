@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "author": "shubham",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}

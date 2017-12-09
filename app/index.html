@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<head>
+  <title>Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css" type="text/css" media="all">
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-multi-select/4.0.0/isteven-multi-select.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body >
+      <header style="background-color: #efefef; text-align: center;" ui-view="header"></header>
+      <div ui-view="container" style="margin-top: 65px;"></div>
+      <footer style="  position: fixed;  right: 0;  bottom: 0;  left: 0;  padding: 1rem;  background-color: #efefef; text-align: center;" ui-view="footer"></footer>
+  </body>
+
+<script src="applicationPath.js"></script>
+<script data-main="main" src="require.js"></script>
